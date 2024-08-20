@@ -1,0 +1,276 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  outline: 0;
+  word-break: break-word;
+}
+
+main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: 2em;
+  margin: 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+body {
+  margin: 0;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  outline: none;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button {
+  border: 0;
+  outline: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+[hidden] {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ff: "Rubik", sans-serif;
+  --transition: .2s all ease-in-out;
+  --c-primary: #4452FE;
+  --c-white: #FFFFFF;
+  --c-dark1: #231F20;
+  --c-dark2: #181818;
+  --c-body: #9B968B;
+}
+
+body {
+  font-family: var(--ff);
+  background-color: var(--c-dark1);
+  color: var(--c-white);
+}
+
+html._overflow {
+  overflow: hidden;
+}
+html._overflow body {
+  overflow: hidden;
+}
+
+a {
+  color: var(--c-white);
+  transition: var(--transition);
+}
+a:hover {
+  color: var(--c-primary);
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0 20px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.active {
+  display: block !important;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  outline: 0;
+  border: 1px solid var(--c-white);
+  padding: 14px 46px;
+  color: var(--c-white);
+  background: none;
+  transition: var(--transition);
+}
+.btn:hover {
+  background: var(--c-white);
+  color: var(--c-dark2);
+}
+.btn--active {
+  background: var(--c-primary);
+  border: none;
+  outline: 1px solid var(--c-primary);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+* ::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #d1d1d1;
+}
+
+.header {
+  background-color: var(--c-dark2);
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+}
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+}
+.header__ul {
+  display: flex;
+  gap: 42px;
+}
+.header__mob-nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.burger-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .burger-menu {
+    display: inline-block;
+  }
+}
+
+.welcome {
+  background-color: var(--c-dark2);
+}
+.welcome__container {
+  padding-top: 95px;
+}
+.welcome__info {
+  text-align: center;
+  max-width: 652px;
+  margin-inline: auto;
+}
+.welcome__info-title {
+  margin-bottom: 28px;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 88px;
+  letter-spacing: 0.2px;
+}
+.welcome__info-text {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+.welcome__info-links {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin: 95px 0 35px 0;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+}/*# sourceMappingURL=style.css.map */

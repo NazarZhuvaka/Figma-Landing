@@ -1,0 +1,43 @@
+.header {
+    background-color: var(--c-dark2);
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 40px;
+    }
+
+    &__nav {
+        @include tablet-small {
+            display: none;
+        }
+    }
+
+    &__ul {
+        display: flex;
+        gap: 42px;
+    }
+
+    &__li {
+    }
+
+    &__link {
+    }
+
+    &__btn{
+        
+    }
+
+    &__mob-nav{
+        display: flex;
+        align-items: center;
+        gap: 26px;
+    }
+}
+
+.burger-menu{
+    display: none;
+    @include tablet-small {
+        display: inline-block;
+    }
+}
